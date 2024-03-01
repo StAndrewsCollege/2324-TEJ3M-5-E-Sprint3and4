@@ -1,4 +1,4 @@
-# 2324-TEJ3M-5-E-1-Sprint2
+# 2324-TEJ3M-5-E-1-Sprint3
 Second sprint for RoboCup line rescue Competition
 
 Teammates: Richard Zhao, Shuiyi Zhao, Hendry Shao
@@ -27,7 +27,9 @@ Another group in RoboCup:
 Web Resources:
 - [OSEPP](https://www.osepp.com/electronic-modules/sensor-modules/58-color-sensor-module) (TCS3200 Data sheet from Google) (Colour sensor info sheet)
 - [RoboCup Rules](efaidnbmnnnibpcajpcglclefindmkaj/https://junior.robocup.org/wp-content/uploads/2023/10/RCJRescueLine2024RulesDraft.pdf) (Rulebook, used to check for dimensional requirements)
-- 
+- chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://docs.rs-online.com/0e85/0900766b8123f8d7.pdf
+- https://www.parallax.com/product/parallax-standard-servo/
+- https://forum.arduino.cc/t/controlling-the-parallax-standard-servo/129007
 ### Ideation
 
 Based on research from
