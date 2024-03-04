@@ -19,7 +19,7 @@ You will follow the steps outlined below (for both this sprint and those for our
 
 ### Goal Setting
 
-The robot will move through the maze and look for victims, based on the colour and shape of the 'victims', they will recieve different amounts of supplies. A H shaped victim recieves 2 packages, a U shaped vicitm recieves 1 package, and an S shaped vicitm recieves no packages. Red vicitms receive 2 packages, yellow victims will receive 1 package, and green victims get no packs. By using a camera, and a detection system (either pixel comparison, literally just AI, or har cascade), we can differentiate between the victims. Therefore, my goal is to make a camera and camera program which can differentiate between victim's shapes and colours.
+The robot will move through the maze and look for victims, based on the colour and shape of the 'victims', they will recieve different amounts of supplies. A H shaped victim recieves 2 packages, a U shaped vicitm recieves 1 package, and an S shaped vicitm recieves no packages. Red vicitms receive 2 packages, yellow victims will receive 1 package, and green victims get no packs. By using a camera, and a detection system (either pixel comparison, literally just AI, or haar cascade), we can differentiate between the victims. Therefore, my goal is to make a camera and camera program which can differentiate between victim's shapes and colours.
 
 ### Research
 
