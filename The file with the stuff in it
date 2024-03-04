@@ -18,11 +18,13 @@ If you have not developed a robot before, or are starting from scratch, the foll
 You will follow the steps outlined below (for both this sprint and those for our RoboCup design).
 
 ### Goal Setting
-You will define a goal that will progress your team's robot design and is reasonable within the scope of the sprint (~2 weeks, given talent and tools).
+
+The robot will move through the maze and look for victims, based on the colour and shape of the 'victims', they will recieve different amounts of supplies. A H shaped victim recieves 2 packages, a U shaped vicitm recieves 1 package, and an S shaped vicitm recieves no packages. Red vicitms receive 2 packages, yellow victims will receive 1 package, and green victims get no packs. By using a camera, and a detection system (either pixel comparison, literally just AI, or har cascade), we can differentiate between the victims. Therefore, my goal is to make a camera and camera program which can differentiate between victim's shapes and colours.
 
 ### Research
 
-You will research and document technical resources that you believe will help you succeed at the sprint.
+The camera we are using is the OpenMV H7 Plus (Product page: https://openmv.io/products/openmv-cam-h7-plus). The first step is to simply get an image in the first place.
+https://docs.openmv.io/openmvcam/tutorial/index.html <- contains some code which be useful?
 
 ### Ideation
 
