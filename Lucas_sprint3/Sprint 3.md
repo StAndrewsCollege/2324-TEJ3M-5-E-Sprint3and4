@@ -26,9 +26,19 @@ The robot will move through the maze and look for victims, based on the colour a
 The camera we are using is the OpenMV H7 Plus (Product page: https://openmv.io/products/openmv-cam-h7-plus). The first step is to simply get an image in the first place.
 https://docs.openmv.io/openmvcam/tutorial/index.html <- contains some code which be useful?
 
+Haar cascade informtaion + code in C++, Java, and Python (how convenient):
+https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html
+
+Pixel comparison information:
+https://support.smartbear.com/testcomplete/docs/testing-with/checkpoints/regions/how-image-comparison-works.html
+
+There is less information on pixel comparison, and search results are clouded by other topics with similar names, but which do not contain information relevant to the robot. However it is simple enough to understand. Snapshot to snapshot, the robot compares the image with a previous image. Depending on how the pixels within the image line up, it will be able to identify shapes. For example, if the comparion image is a known letter "H", and the pixels which match up from the snapshot taken from the camera match up to the "H", then we will know that the robot is facing an H victim, and will deposit 2 supplies.
+
+It is most likely that AI will be used over pixel comparison or the haar cascade. More reseach will need to be done, but my team members say that this is what they used the year prior, and that there is already semi-functional code, as well as a way to easily create new code/AIs.
+
 ### Ideation
 
-You will create quick sketches or descriptions of your planned design
+There should be no issues with using AI for the algorthim for the robot. Despite the fact that I'm not fully sure how it works yet, I have been told that the setup for the AI is very simple. Thus, we will probably be using AI, as it has both been figured out by the team last year (at least so some degrees）and also because it is the most advanced/accurate compared to pixel comparison or a haar cascade. There's really no ideation for the camera. So long as I can get it running (that is to say that the camera can generate and image and return it back to the robot it should be fine (also that is it wired correctly, but that of course is included in the "collecting and returning image" part). For now, I'm unsure about the method with which I will make the AI, however, it has been determined that that is the image detection system we are going to use. In terms of the camera code, it operates in python for some reason, so I'll have to speedrun the learning on that if I am to finish the setup and the algorithim by the end of this sprint. The sensors are fully dealt with, all that's left is to await a replacement for the single broken one, wire them together, make sure they're working (running on old code from last year) and that's it.
 
 ### Prototyping
 
