@@ -22,7 +22,7 @@ New Research for Sprint 3:
 - Bot reference number 5 (team Bitflip again): https://www.youtube.com/watch?v=rkcc-eY-xhg
   - Yet another team Bitflip line run. The interesting thing about this one is that their "scooper" is designed differently in this one. It's actually an interesting design. It's just a bell shaped container that envelopes the object when the arm goes down. Then, a tiny servo attachment pulls an elastic that tightens over the opening to secure the object inside. This is a simple design but it's actually pretty effective.
  
-##### Research Conclusion
+### Research Conclusion
 - I think there's some really great ideas that I can pull from each of these bots. I think the most important part however, for our bot specifically is space conservation. According to my partner who is currently designing the chassis, our space is pretty limited, so I will presumeably end up going for a claw approach over the giant retractable flat base. Also if our storage unit is constructed large enough to store two objects, the claw can just pick up multiple objects individually and place them in the storage, losing a bit of time but saving space. 
 
 # Prototyping
