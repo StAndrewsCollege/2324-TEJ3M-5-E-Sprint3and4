@@ -1,5 +1,5 @@
 # Problem
-The robot can't follow a given path (line)
+The robot can't follow a given path (line). I need the robot to constantly look for and follow a black line. 
 
 The bot once did, but after some huge adjustments, it doesn't work again. Have to start over. 
 
@@ -38,3 +38,58 @@ https://blog.arduino.cc/2017/08/30/rgb-led-color-detector/
 IR sensor/Line follower
 
 # Research
+http://wiki.sunfounder.cc/index.php?title=Line_Follower_Module
+
+Provides general info about the Sunfounder line follower module
+- Each black bit is an IR sensor, where one side shoots an IR ray and the other detects the intensity of the ray
+- Provides wiring info; 5V - 5V pin, GND - GND pin, SCL - A5 pin, SDA - A4 pin
+- Provides code that makes the sensor work
+
+``` C++
+#include <Wire.h>
+#define uchar unsigned char
+uchar t;
+//void send_data(short a1,short b1,short c1,short d1,short e1,short f1);
+uchar data[16];
+void setup()
+{
+  Wire.begin();        // join i2c bus (address optional for master)
+  Serial.begin(9600);  // start serial for output
+  t = 0;
+}
+void loop()
+{
+  Wire.requestFrom(9, 16);    // request 16 bytes from slave device #9
+  while (Wire.available())   // slave may send less than requested
+  {
+    data[t] = Wire.read(); // receive a byte as character
+    if (t < 15)
+      t++;
+    else
+      t = 0;
+  }
+  Serial.print("data[0]:");
+  Serial.println(data[0]);
+  Serial.print("data[2]:");
+  Serial.println(data[2]);
+  Serial.print("data[4]:");
+  Serial.println(data[4]);
+  Serial.print("data[6]:");
+  Serial.println(data[6]);
+  Serial.print("data[8]:");
+  Serial.println(data[8]);
+  Serial.print("data[10]:");
+  Serial.println(data[10]);
+  Serial.print("data[12]:");
+  Serial.println(data[12]);
+  Serial.print("data[14]:");
+  Serial.println(data[14]);
+  delay(500);
+}
+```
+
+https://www.arduino.cc/reference/en/language/functions/communication/wire/
+
+Further explains the code above - What's the Wire.h library?
+
+- Wire.h allows the code to communicate with I2C devices
