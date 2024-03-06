@@ -36,9 +36,13 @@ There is less information on pixel comparison, and search results are clouded by
 
 It is most likely that AI will be used over pixel comparison or the haar cascade. More reseach will need to be done, but my team members say that this is what they used the year prior, and that there is already semi-functional code, as well as a way to easily create new code/AIs.
 
+https://www.tensorflow.org/learn: Will be used to figure out the AI.
+
 ### Ideation
 
 There should be no issues with using AI for the algorthim for the robot. Despite the fact that I'm not fully sure how it works yet, I have been told that the setup for the AI is very simple. Thus, we will probably be using AI, as it has both been figured out by the team last year (at least so some degrees）and also because it is the most advanced/accurate compared to pixel comparison or a haar cascade. There's really no ideation for the camera. So long as I can get it running (that is to say that the camera can generate and image and return it back to the robot it should be fine (also that is it wired correctly, but that of course is included in the "collecting and returning image" part). For now, I'm unsure about the method with which I will make the AI, however, it has been determined that that is the image detection system we are going to use. In terms of the camera code, it operates in python for some reason, so I'll have to speedrun the learning on that if I am to finish the setup and the algorithim by the end of this sprint. The sensors are fully dealt with, all that's left is to await a replacement for the single broken one, wire them together, make sure they're working (running on old code from last year) and that's it.
+
+The code for the colour detection is pretty much built into the camera itself. All we have to do is write the code, we don't need to train and use an AI to detect colour. For the shape detection, we will be using an AI built using TensorFlow (what the team used last year). It will be trained to detect Hs, Us, and Ss. If nothing goes wrong, the maze should only contain these items, with nothing that may be confused for a victim.
 
 ### Prototyping
 
