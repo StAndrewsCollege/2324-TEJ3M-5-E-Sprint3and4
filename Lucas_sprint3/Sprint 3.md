@@ -46,7 +46,9 @@ The code for the colour detection is pretty much built into the camera itself. A
 
 ### Prototyping
 
-You will make a quick and simple test of your ideas, making something that is built and tested as quickly as possible.
+![unnamed](https://github.com/StAndrewsCollege/2324-TEJ3M-5-E-Sprint3and4/assets/156132499/7d914043-351c-47d0-9832-229a52e324b4)
+
+As can be seen above, the camera automatically generates the RGB values of any image it captures. The code used in the image is the exact default code which is given upon installation of the IDE. Now I need to correct the lense distorition to get an accurate image (camera uses fisheye lense) and then create code to filter out static and give a clear reading about what colour of the object it's looking at is. The maze will be white and greyish, making a clear contrast between the victims and the maze.
 
 ### Testing and Critique
 
