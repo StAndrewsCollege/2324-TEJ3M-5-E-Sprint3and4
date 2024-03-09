@@ -38,6 +38,10 @@ It is most likely that AI will be used over pixel comparison or the haar cascade
 
 https://www.tensorflow.org/learn: Will be used to figure out the AI.
 
+https://youtube.com/playlist?list=PLQVvvaa0QuDcNK5GeCQnxYnSSaar2tpku&si=XLUMHUoLIoeaKhCC
+
+Basic TensorFlow obj detection guide. Might be a bit outdated but I think the core principles would be the same.
+
 ### Ideation
 
 There should be no issues with using AI for the algorthim for the robot. Despite the fact that I'm not fully sure how it works yet, I have been told that the setup for the AI is very simple. Thus, we will probably be using AI, as it has both been figured out by the team last year (at least so some degrees）and also because it is the most advanced/accurate compared to pixel comparison or a haar cascade. There's really no ideation for the camera. So long as I can get it running (that is to say that the camera can generate and image and return it back to the robot it should be fine (also that is it wired correctly, but that of course is included in the "collecting and returning image" part). For now, I'm unsure about the method with which I will make the AI, however, it has been determined that that is the image detection system we are going to use. In terms of the camera code, it operates in python for some reason, so I'll have to speedrun the learning on that if I am to finish the setup and the algorithim by the end of this sprint. The sensors are fully dealt with, all that's left is to await a replacement for the single broken one, wire them together, make sure they're working (running on old code from last year) and that's it.
