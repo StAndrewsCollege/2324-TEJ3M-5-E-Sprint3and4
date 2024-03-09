@@ -54,6 +54,8 @@ As can be seen above, the camera automatically generates the RGB values of any i
 
 Corrected image. There is significantly less distortion on the image captured by the lense now.
 
+For the code on colour detection, it will mostly likely be something along the lines of "if the RBG value reads X, X, X, return (colour)", with the three values being in an array (index 0, red, index 1, green, index 2, blue). This prevents any issues with misidentification, as pure white is 256, 256, 256, making just having it return a colour if an RGB value is greater than X unfeasable. Because red, yellow, and green are combinations of the three values, having all three values match up for a given colour will make IDing it more accurate. Once the array values satisfy the conditions, the code will return a colour, say once every 5 seconds, such that no issues of outliers creating incorrect code will exist. Either that or we average values again.
+
 ### Testing and Critique
 
 You will evaluate your prototype and document your thinking, what you have learned and how you will improve your design.
